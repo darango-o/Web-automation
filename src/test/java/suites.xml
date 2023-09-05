@@ -3,7 +3,7 @@
 <suite name="Default Suite">
     <test thread-count="5" name="WebAutom">
         <classes>
-            <class name="com.saucedemo.saucedemotest"/>
+            <class name="com.saucedemo.SaucedemoTest"/>
         </classes>
     </test> <!-- WebAutom -->
 </suite> <!-- Default Suite -->

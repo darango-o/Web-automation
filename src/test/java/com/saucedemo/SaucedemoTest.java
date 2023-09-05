@@ -2,7 +2,7 @@ package com.saucedemo;
 
 import org.testng.annotations.*;
 
-public class saucedemotest {
+public class SaucedemoTest {
 
     @BeforeClass
     public void setupBrowser(){

@@ -1,4 +1,4 @@
-package com.saucedemo;
+package com.saucedemo.scripts;
 
 import org.testng.annotations.*;
 

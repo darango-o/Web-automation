@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Default Suite">
+
+    <parameter name="url" value="https://www.saucedemo.com/" />
+    <parameter name="username" value="standard_user" />
+    <parameter name="password" value="secret_sauce" />
+
+    <listeners>
+        <listener class-name="com.saucedemo.Listener"/>
+    </listeners>
+
     <test thread-count="5" name="WebAutom">
         <classes>
-            <class name="com.saucedemo.SaucedemoTest"/>
+            <class name="com.saucedemo.scripts.PurchaseItemTest"/>
+            <class name="com.saucedemo.scripts.RemovingCartItemsTest"/>
+            <class name="com.saucedemo.scripts.LogoutTest"/>
         </classes>
     </test> <!-- WebAutom -->
 </suite> <!-- Default Suite -->
